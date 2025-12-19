@@ -1,0 +1,41 @@
+# --- Dependencies ---
+node_modules/
+/dist
+/artifacts
+
+# --- NestJS/TypeScript ---
+# Incremental build files
+*.tsbuildinfo
+# Build output
+dist/
+# Optional: test coverage
+coverage/
+
+# --- Database & Environment ---
+# Crucial: Never commit your MongoDB connection strings
+.env
+.env.local
+.env.dev
+.env.production
+# If using a local MongoDB data volume (e.g., in Docker)
+/mongodb_data
+/db-data
+
+# --- Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# --- IDEs & OS ---
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Docker ---
+# If you use Docker for your Mongo instance
+.dockerignore
